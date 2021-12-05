@@ -1,0 +1,95 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.page {
+  margin: 10px 10px;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+.pagination {
+  float: right;
+  margin: 10px 0px;
+}
+
+// Canvas from '@/assets/js/canvas-nest.min.js'
+body > canvas {
+  background: #F5F5F5 linear-gradient(-18deg, #c7e4ff 18%, #F5F5F5, transparent 88%);
+  opacity: 0.3;
+  //background:linear-gradient(131deg,#c1c6ce 0%, #66b1ff 100%);
+
+  //background: linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #162e48 0),
+  //linear-gradient(135deg, red 40%, blue, transparent 0),
+  //linear-gradient(45deg, black, transparent);
+
+  //background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+}
