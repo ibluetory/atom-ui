@@ -1,7 +1,4 @@
-# seismic-wavefield-website
-
-DNN地震波场正演及全波形反演平台-前端页面
-
+# atom
 
 ## Project setup
 ```
